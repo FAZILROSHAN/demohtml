@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>enmployee form</title>
+    </head>
+    <body>
+        <h1>Employee Registration</h1>
+        <form action="https://www.youtube.com/" >
+            <fieldset>
+              <legend><b>Personal Information</b></legend>
+               <label for="first name">firstname<i style="color: red;">*</i></label>
+               <input type="text" id="firstname" name="firstname" placeholder="enter first name" required>
+               <br><br>
+               <label for="lastname">Last name<i style="color: red;">*</i></label>
+               <input type="text" required id="lastname" name="lastname"placeholder="enter last name">
+               <br><br>
+               <label for="enamil">Email<i style="color: red;">*</i></label>
+               <input type="email" placeholder="Enter email address" required>
+               <br>
+               <small style="opacity: 0.5;"><i>Example:jhon.doe@example.com</i></small>
+               <br><br>
+               <label>Phone number<i style="color: red;">*</i></label>
+               <input type="tel" placeholder="enter Phone Number" required pattern="[0-9]+">
+               <br><br>
+               <label>Gender<i style="color: red;">*</i></label>
+               <input type="radio"required name="gender">MALE
+               <input type="radio"name="gender">FEMALE
+               <br><br>
+               <label >Date Of Birth<i style="color: red;">*</i></label>
+               <input type="date">
+               <br><br>
+               <label>Maritial Status<i style="color: red;">*</i></label>
+               <input type="radio" required name="knk">Married
+               <input type="radio" name="knk">Unmarried
+               <br><br>
+               <label >Spouse Name (If Applicable)</label>
+               <input type="text" placeholder="Enter spouse name">
+            </fieldset>
+
+
+            <fieldset>
+                <legend><b>Employee Details</b></legend>
+                <label>Department<i style="color: red;">*</i></label>
+                <select name="department" id="department" required>
+                <option value="department" disabled selected> SELCT DEPARTMENT</option>
+                <option value="hr">HR</option>
+                <option value="it">IT</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                </select>
+                <br><br>
+                <label>Years of Experience</label>
+                <input type="number" id="yearsofexpeience" name="years of experience" placeholder="Enter Years Of Experience">
+                <br><br>
+                <label for="skills">Skills:</label>
+                <br>
+                <input type="checkbox">HTML
+                <input type="checkbox">CSS 
+                <input type="checkbox">JAVASCRIPT
+                <input type="checkbox">SQL
+                <BR></BR>
+                <label for="certifications">Certifications</label>
+                <br>
+                <textarea placeholder="list your certifications" cols="30" rows="10"></textarea>
+                <br><br>
+                <label for="profilepicture">Profile Picture</label>
+                <input type="file" accept="image/*" >
+                <br>
+                <small style="opacity: 0.5;"><i>Allowed Format:JPG,PNG</i></small>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+
+            <fieldset>
+                <legend><b>Emergency Contact</b></legend>
+                <label for="Contact name">Contact Name<i style="color: red;">*</i></label>
+                <br>
+                <input type="text" placeholder="enter contact name" id="Contactname" name="Contactname" required pattern="[0-9]+">
+                <br><br>
+                <label for="contact number">Contact number<i style="color: red;">*</i></label>
+                <br>
+                <input type="text"placeholder="enter contact number" id="contactnumber" name="contactnumber" required>
+                <br><br>
+                <label for="relationship">Relationship<i style="color: red;">*</i></label>
+                <br>
+                <input type="text" placeholder="enter relationship(eg:parent)" id="relationship" name="relationship" required>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Address details</b></legend>
+                <label for="address">Address<i style="color: red;">*</i></label>
+                <br>
+                <textarea placeholder="Enter your Address" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Login Details</b></legend>
+                <label for="username">Username<i style="color: red;">*</i></label>
+                <br>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+                <br><br>
+                <label for="Password">Password<i style="color: red;">*</i></label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <br><br>
+                <label for="confirmpassword">Confirm Password</label>
+                <br>
+                <input type="password" id="Password" name="password" placeholder="Re-Enter Password" required>
+                <br>
+                <button type="submit" >SUBMIT</button>
+                <button type="reset" >CLEAR FORM</button>
+
+            </fieldset>
+            </fieldset>
+        </form>
+    </body>
+</html>
